@@ -1,0 +1,361 @@
+.debut {background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligner les éléments en haut */
+    padding: 20px;
+  }
+  
+  .photodebutdroit {
+
+    padding-left: 50%;
+    display: flex;
+    
+  }
+  
+  .logo {
+    margin-right: 20px;
+    padding-left: 35px;
+  }
+  
+  nav {
+    align-self: flex-start; /* Aligner le nav en haut par rapport au header */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .content {
+    max-width: 600px;
+    padding-left: 35px;
+  }
+  
+  .deuxbuttonaccueil {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #008000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  button a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+
+h1{
+    text-align:center; /* Centrer le contenu horizontalement */
+    font-size: 40px;
+    color: #000000;
+    
+}
+/*annonce*/
+.sectionUN {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
+  }
+  
+        article {
+            max-width: 250px;
+            background-color: #008000;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+  
+  img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #008000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #voirPlus {
+    margin-top: 20px;
+  }
+  
+  #voirPlus:hover,
+  button:hover {
+    opacity: 0.8;
+  }
+  
+
+
+
+/*statistiques*/
+.sectionDEUX {
+    text-align: center; /* Centrer le contenu horizontalement */
+    padding: 20px 0; /* Ajouter de l'espacement autour des statistiques */
+  }
+  
+ 
+  
+        article {
+            display: inline-block; /* Afficher les articles en ligne */
+            width: 250px; /* Largeur des blocs de statistiques */
+            background-color: #f9f9f9; /* Couleur de fond */
+            padding: 20px;
+            margin: 0 10px; /* Espacement horizontal entre les articles */
+            border-radius: 8px; /* Coins arrondis */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+        }
+  
+  figure {
+    margin-bottom: 15px;
+  }
+  
+  img {
+    width: 100px; /* Largeur des images de statistiques */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+    border-radius: 50%; /* Coins arrondis pour les images */
+  }
+  
+  figcaption {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+
+/*partenaires*/
+.sectionTROIS {
+    text-align: center; /* Centrer le contenu horizontalement */
+    padding: 50px 10; /* Ajouter de l'espacement autour des partenaires */
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+        article {
+            display: inline-block; /* Afficher les articles en ligne */
+            margin: 0 25px; /* Espacement horizontal entre les articles */
+            margin-bottom: 5px; /* Espacement vertical sous chaque article */
+        }
+  
+  figure {
+    margin: 0;
+  }
+  
+  img {
+    width: 100px; /* Largeur des logos des partenaires */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  }
+  
+  figcaption {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+
+
+/*cartes temoing*/
+.sectionQUATRE {
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  .sectionQUATRE h1{
+    text-align: center;
+  }
+  .sectionQUATRE p {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial {
+    display: inline-block;
+    width: 300px;
+    margin: 0 10px;
+    vertical-align: top;
+    background-color: #f9f9f9;
+    padding: 65px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+
+
+/*contact*/.sectionCINQ {
+    text-align: center; /* Aligner le contenu au centre */
+    padding: 50px 0; /* Ajouter de l'espacement autour du formulaire */
+  }
+  
+  .contacterNous {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .resterContacter { 
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+    text-align: center; /* Aligner le contenu au centre */
+  }
+  
+  form {
+    max-width: 500px; /* Largeur maximale du formulaire */
+    margin: 0 auto; /* Centrer le formulaire horizontalement */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Inclure le padding dans la largeur */
+  }
+  
+  input[type="submit"] {
+    background-color: #008000;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #008000;
+  }
+  
+
+/* Style général du footer */
+footer {
+    background-color: #fff;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  /* Style pour la section Bataarelogo */
+  .Bataarelogo {
+    flex: 1 1 20%;
+    max-width: 200px;
+  }
+  
+  .logofooter {
+    width: 100%;
+    max-width: 150px;
+  }
+  
+  .reseausociaux img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  /* Style pour la section Bamtaare, Soutien et Ajour */
+  .Bamtaare,
+  .soutien,
+  .ajour {
+    flex: 1 1 20%;
+    max-width: 200px;
+  }
+  
+  h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  /* Style pour le champ d'adresse e-mail */
+  button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #008000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #8e918e;
+  }
+  
