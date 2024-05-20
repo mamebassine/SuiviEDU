@@ -1,76 +1,134 @@
-.debut {background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Aligner les éléments en haut */
-    padding: 20px;
-  }
-  
-  .photodebutdroit {
+/* style.css */
 
-    padding-left: 50%;
-    display: flex;
-    
-  }
-  
-  .logo {
-    margin-right: 20px;
-    padding-left: 35px;
-  }
-  
-  nav {
-    align-self: flex-start; /* Aligner le nav en haut par rapport au header */
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  .content {
-    max-width: 600px;
-    padding-left: 35px;
-  }
-  
-  .deuxbuttonaccueil {
-    margin-top: 20px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #008000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    margin-right: 10px;
-    cursor: pointer;
-  }
-  
-  button a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-
-h1{
-    text-align:center; /* Centrer le contenu horizontalement */
-    font-size: 40px;
-    color: #000000;
-    
+/* Réinitialisation des marges et des rembourrages */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
 }
+body{
+  background-color: #fff;
+}
+/* Styles pour le contenu */
+.content {
+padding-left:78px;
+  position: absolute;
+  bottom: 25%;
+  left: 20px;
+  max-width: 50%; /* Ajustez la largeur du contenu selon vos besoins */
+}
+
+.content h2 {
+  color: #008000;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.deuxbuttonaccueil {
+  margin-top: 20px;
+}
+
+.deuxbuttonaccueil button {
+  background-color: #008000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.deuxbuttonaccueil button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
+/* Styles pour le header */
+header {
+  position: relative;
+  
+  padding: 350px;
+}
+
+
+.logo {
+  
+  position: absolute;
+  top: 5%;
+ left: -165%;
+  padding-left:78%;
+}
+
+.debut {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%; /* Ajustez la largeur de l'image selon vos besoins */
+  height: 100%; /* Ajustez la hauteur de l'image selon vos besoins */
+  background-image: url("image/accueil.png");
+  background-size: cover;
+}
+
+nav {
+  position: absolute;
+  top: 65px;
+  right: 20px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*annonce*/
 .sectionUN {
+  bottom: 20%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -95,7 +153,7 @@ h1{
   
   p {
     font-size: 16px;
-    color: #666;
+    color: #000;
     margin-bottom: 20px;
   }
   
@@ -109,9 +167,7 @@ h1{
     cursor: pointer;
   }
   
-  #voirPlus {
-    margin-top: 20px;
-  }
+  
   
   #voirPlus:hover,
   button:hover {
@@ -151,13 +207,13 @@ h1{
   
   figcaption {
     font-size: 20px;
-    color: #333;
+    color: #000;
     font-weight: bold;
   }
   
   p {
     font-size: 16px;
-    color: #666;
+    color: #000;
   }
   
 
@@ -169,8 +225,9 @@ h1{
   
   h1 {
     font-size: 24px;
-    color: #333;
+    color: #000;
     margin-bottom: 20px;
+    text-align: center;
   }
   
         article {
@@ -192,7 +249,7 @@ h1{
   
   figcaption {
     font-size: 16px;
-    color: #666;
+    color: #000;
     margin-top: 10px;
   }
   
@@ -232,31 +289,45 @@ h1{
   
   .testimonial h3 {
     font-size: 20px;
-    color: #333;
+    color: #000;
     margin-bottom: 10px;
   }
   
   .testimonial p {
     font-size: 16px;
-    color: #666;
+    color: #000;
   }
   
 
 
+
+
+/* Styles pour la section de contact */
+.sectionCINQ {
+  text-align: center; /* Aligner le contenu au centre */
+  padding: 50px 0; /* Ajouter de l'espacement autour du formulaire */
+  background-image: url("image/imagecontact.webp"); /* URL de l'image d'arrière-plan */
+  background-size: cover; /* Adapter la taille de l'image pour couvrir toute la section */
+  background-position: center; /* Centrer l'image */
+  background-repeat: no-repeat; /* Éviter la répétition de l'image */
+  color: #000; /* Couleur du texte pour une meilleure lisibilité sur l'image */
+}
 /*contact*/.sectionCINQ {
-    text-align: center; /* Aligner le contenu au centre */
+ text-align: center; /* Aligner le contenu au centre */
     padding: 50px 0; /* Ajouter de l'espacement autour du formulaire */
   }
-  
+  .formulaire{
+    color: #008000;
+  }
   .contacterNous {
     font-size: 28px;
-    color: #333;
+    color: #000;
     margin-bottom: 20px;
   }
   
   .resterContacter { 
     font-size: 18px;
-    color: #666;
+    color: #000;
     margin-bottom: 40px;
     text-align: center; /* Aligner le contenu au centre */
   }
@@ -265,7 +336,7 @@ h1{
     max-width: 500px; /* Largeur maximale du formulaire */
     margin: 0 auto; /* Centrer le formulaire horizontalement */
     padding: 20px;
-    background-color: #f9f9f9;
+    
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
@@ -299,63 +370,267 @@ h1{
   input[type="submit"]:hover {
     background-color: #008000;
   }
+
+  .Bataarelogo1 {
+    flex: 1 1 20%;
+    max-width: 200px;
+  }
+  .logofooter1 {
+    width: 100%;
+    max-width: 150px;
+  }
+
+
+
+
   
 
 /* Style général du footer */
 footer {
-    background-color: #fff;
-    padding: 30px 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  background-color: #fff;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Bataarelogo,
+.Bamtaare,
+.soutien,
+.ajour {
+  flex: 1 1 20%;
+  max-width: 200px;
+  margin-bottom: 20px; /* Espace en bas pour chaque section */
+}
+
+.Bataarelogo {
+  text-align: center; /* Centrer le contenu de Bataarelogo */
+  
+}
+
+.logofooter {
+  width: 100%;
+  max-width: 150px;
+  margin-bottom: 10px; /* Espace entre le logo et le texte */
+}
+
+.Bataarelogo h2 {
+  font-size: 14px; /* Ajuster la taille de la police pour le copyright */
+  margin-top: 10px; /* Espace en haut du texte copyright */
+  color: #000; /* Couleur du texte copyright */
+}
+
+.Bataarelogo p img {
+  width: 30px;
+  margin: 0 5px; /* Espacement entre les icônes des réseaux sociaux */
+}
+
+footer h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+footer p {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+footer button {
+  padding: 10px 15px;
+  background-color: #008000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px; /* Espace en haut du bouton */
+}
+
+footer button:hover {
+  background-color: #006400;
+}
+
+/* Réseaux sociaux */
+.Bataarelogo p {
+  display: flex;
+  justify-content: center; /* Centrer les icônes des réseaux sociaux */
+  gap: 10px; /* Espacement entre les icônes */
+}
+header .logo img, footer .logo {
+  width: 150px; /* Utilisez la même taille pour les deux logos */
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pour les écrans de petite taille jusqu'à 768px de largeur */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 20px; /* Réduire le rembourrage de l'en-tête */
   }
   
-  /* Style pour la section Bataarelogo */
-  .Bataarelogo {
-    flex: 1 1 20%;
-    max-width: 200px;
+  .logo {
+    left: 5%; /* Ajuster la position du logo */
+    padding-left: 20px; /* Ajouter du rembourrage à gauche */
   }
   
-  .logofooter {
-    width: 100%;
-    max-width: 150px;
+  nav {
+    top: 0;
+    right: 0;
+    padding: 20px; /* Ajouter du rembourrage au menu */
   }
   
-  .reseausociaux img {
-    width: 30px;
-    margin-right: 10px;
+  .content {
+    position: relative;
+    bottom: initial;
+    left: initial;
+    max-width: 100%; /* Ajuster la largeur du contenu */
+    padding: 0 20px; /* Ajouter du rembourrage sur les côtés */
+    margin-bottom: 50px; /* Ajouter de l'espace en bas du contenu */
   }
   
-  /* Style pour la section Bamtaare, Soutien et Ajour */
-  .Bamtaare,
-  .soutien,
-  .ajour {
-    flex: 1 1 20%;
-    max-width: 200px;
+  .debut {
+    padding: 250px 20px; /* Ajouter du rembourrage au fond d'écran */
+  }
+}
+
+/* Pour les écrans de très petite taille jusqu'à 480px de largeur */
+@media screen and (max-width: 480px) {
+  header {
+    padding: 10px; /* Réduire davantage le rembourrage de l'en-tête */
   }
   
-  h1 {
-    font-size: 18px;
+  .logo {
+    width: 70px; /* Réduire la taille du logo */
+    height: 70px;
+    left: 2%; /* Ajuster la position du logo */
+    padding-left: 10px; /* Réduire le rembourrage à gauche du logo */
+  }
+  
+  nav {
+    padding: 10px; /* Réduire le rembourrage du menu */
+  }
+  
+  .content {
+    padding: 0 10px; /* Réduire le rembourrage sur les côtés du contenu */
+  }
+  
+  .debut {
+    padding: 150px 10px; /* Réduire le rembourrage au fond d'écran */
+  }
+}
+
+/* Pour les écrans de taille moyenne jusqu'à 992px de largeur */
+@media screen and (max-width: 992px) {
+  .content {
+    padding-left: 20px; /* Réduire le rembourrage de gauche pour le contenu */
+  }
+}
+
+
+
+
+
+/* Pour les écrans de petite taille jusqu'à 768px de largeur */
+@media screen and (max-width: 768px) {
+  .logo {
+    top: 40px;
+    left: -350px;
+    padding-left: 0;
+    width: 100px;
+    height: auto;
+  }
+
+  nav {
+    top: 50px;
+    right: 10px;
+  }
+
+  .content {
+	  top: -350px;
+    position: relative;
+    bottom: initial;
+    left: initial;
+    max-width: 100%;
+    padding: 0 20px;
+    margin-bottom: 50px;
+  }
+
+  .debut {
+	  
+    padding: 150px 20px;
+	
+  }
+
+  .content h2 {
+    font-size: 20px;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+
+  .deuxbuttonaccueil {
+    text-align: left;
+  }
+
+  .deuxbuttonaccueil button {
+    margin-right: 0;
     margin-bottom: 10px;
   }
-  
-  p {
-    font-size: 14px;
-    color: #666;
-    margin: 5px 0;
+}
+
+/* Pour les écrans de très petite taille jusqu'à 480px de largeur */
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 70px;
+    height: auto;
+    top: 30px;
+    left: -90%;
   }
-  
-  /* Style pour le champ d'adresse e-mail */
-  button {
-    padding: 10px 15px;
-    border: none;
-    background-color: #008000;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 5px;
+
+  nav {
+    top: 70px;
+    right: 20%;
   }
-  
-  button:hover {
-    background-color: #8e918e;
+
+  .content {
+    padding: 0 20px;
   }
+
+  .debut {
+	  
+    padding: 100px 10px;
+  }
+
+  .content h2 {
+    font-size: 18px;
+  }
+
+  .content p {
+    font-size: 12px;
+  }
+
+  .deuxbuttonaccueil button {
+    font-size: 12px;
+  }
+}
+
   
